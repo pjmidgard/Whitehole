@@ -3070,7 +3070,7 @@ if namez=="c3":
                             #len(zzaax)
                             #dd2w=len(zzaax)
                             #print(dd2w)
-                            #wer=wer+szxx
+                            wer=wer+szxx
                             #os.system("pause")
                                 
                        
