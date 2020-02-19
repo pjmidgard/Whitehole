@@ -147,7 +147,7 @@ if namez=="u1":
             assas=0
             wer=""
             asaaqt=""
-            countraz=countraz+1
+            
 
 
             
@@ -606,7 +606,7 @@ if namez=="c1":
             assas=0
             wer=""
             asaaqt=""
-            countraz=countraz+1
+            
 
 
             import paq
@@ -2851,13 +2851,13 @@ if namez=="c3":
     namem=""
     namema="?"
    
-    blockw=100000
-    blockw1=99999
+    blockw=1000
+    blockw1=999
     nameas=name+".b3"
     countraz=0
-    
+    werw=0
     s=""
-   
+    
 
     with open(nameas, "w") as f4:
             f4.write(s)
@@ -2917,8 +2917,8 @@ if namez=="c3":
             asaaq=""
             szxzzzas=""
             s=""
-            blockw=10000
-            blockw1=9999
+            blockw=1000
+            blockw1=999
             sdaa=""
             aas=0
             asaaq=""
@@ -2932,7 +2932,7 @@ if namez=="c3":
             asaaqt=""
             e1=0
             e2=0
-            countraz=countraz+1
+            
 
 
             
@@ -2989,81 +2989,105 @@ if namez=="c3":
                         n=0
                         sssq=0
                         enx=0
-                        if blockw==10000:
+                        if blockw==1000:
 
 
                            
                             e7=0
                             e6=0
                             e5=0    
-                            e4=0 
-                            while e4<1:
+                            e4=0
+                            
+                            e1=e2
+                            e2=e2+1
+                            e6=e6+1
+                            e3=szxx[e1:e2]
+
+                            if e3=="1":
+                                e7=1
+                                zzaax=zzaax+"0"
+
+                            if e3=="0":
                                 e1=e2
                                 e2=e2+1
                                 e6=e6+1
                                 e3=szxx[e1:e2]
-                                if e3=="1" and e6==1:
-                                    ee7=1
-                                if e3=="0" and e6==1:
-                                    ee7=2
+                                if e3=="1":
+                                    e7=3
+                                    szxx=szxx[2:]
+                                    szxx="0"+szxx
+                                    aaqws="1"+aaqws
+                                if e3=="0":
+                                    e7=2
+                                    aaqws="0"+aaqws
+                                if e6==1000:
+                                        raise SystemExit    
+
+                            if e7==1:
+                                e4=0
+                                while e4<1:
                                     e1=e2
                                     e2=e2+1
                                     e6=e6+1
-                                    e8=szxx[e1:e2]
-                                    if e8=="1":
+                                    e3=szxx[e1:e2]
+                                    if e3=="1":
                                         zzaax=zzaax+"1"
-                                        szxx=szxx[2:]
-                                        szxx="0"+szxx
-                                        ee7=3
+                                    if e3=="0":
+                                        szxx=szxx[1:]
+                                        szxx=szxx[e1-1:]
+                                        szxx="1"+szxx
                                         e4=1
-                                    if e8=="0":
-                                        
-                                       
-                                        ee7=2
-                                        e3=e8
-                                        
+                                    if e6==1000:
+                                        raise SystemExit    
+                            if e7==2:
+                                e4=0
+                                while e4<1:
+                                    e1=e2
+                                    e2=e2+1
+                                    e6=e6+1
+                                    e3=szxx[e1:e2]
+                                    if e3=="0":
+                                        aaqws="0"+aaqws
+                                    if e3=="1":
+                                        aaqws="1"+aaqws
+                                        e4=1
+                                    if e6==1000:
+                                        raise SystemExit    
+
+                                e4=0
+                                while e4<1:
+                                    e1=e2
+                                    e2=e2+1
+                                    e6=e6+1
+                                    e3=szxx[e1:e2]
+                                    if e3=="1":
+                                        aaqws="1"+aaqws
+                                    if e3=="0":
+                                        aaqws="0"+aaqws
+                                        e4=1
+                                    if e6==1000:
+                                        raise SystemExit    
+                                e4=0
+                                while e4<1:
+                                    e1=e2
+                                    e2=e2+1
+                                    e6=e6+1
+                                    e3=szxx[e1:e2]
+                                    if e3=="0":
+                                        aaqws="0"+aaqws
+                                    if e3=="1":
+                                        aaqws="1"+aaqws
+                                        szxx=szxx[1:]
+                                        szxx=szxx[e2-1:]
+                                        szxx="0"+szxx
+                                        e4=1
+                                    if e6==1000:
+                                        raise SystemExit    
+                                    
                                 
-                                if e3=="1" and ee7==1:
-                                    e5=e5+1
-                                    if e5==1:
-                                        aaqws=aaqws+"0"
-                                    else:
-                                        aaqws=aaqws+"1"
-                                if e3=="0" and ee7==1:
-                                    szxx=szxx[1:]
-                                    szxx=szxx[e2-1:]
-                                    szxx="1"+szxx
-                                    e4=1
-                                if e3=="0" and ee7==2:
-                                    
-                                    
-                                    zzaax=zzaax+"0"
-                                    
-                                if e3=="1" and ee7==2 or e3=="1" and ee7==4:
-                                    ee7=4
-                                    zzaax=zzaax+"1"
-                                if e3=="0" and ee7==4:
-                                    ee7=5
-                                    
-                                if e3=="0" and ee7==5:
-                                    ee7=5
-                                    zzaax=zzaax+"0"
-                                if e3=="1" and ee7==5:
-                                    ee7=6
-                                    zzaax=zzaax+"1"
-                                    szxx=szxx[2:]
-                                    szxx=szxx[e2-1:]
-                                    
-                                    szxx="0"+szxx
-                                    e4=1
-                                if e6==10000:
-                                    
-                                    raise SystemExit    
                              
-                             
-                             
-                            wer=wer+szxx
                             
+                            wer=wer+szxx
                             
                                 
                        
@@ -3287,7 +3311,11 @@ if namez=="c3":
                 asaaqq=""
                 asaaq=""
                 # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
-                wer="1"+wer+aaqws+zzaax+"1"
+                werw=werw+1
+                if werw==1:
+                    wer="10"+wer+aaqws+zzaax+"1"
+                else:
+                    wer="11"+wer+aaqws+zzaax+"1"
                 aqqwwa=10    
                 lenf=len(wer)
                 xc=8-lenf%8
@@ -3349,13 +3377,22 @@ if namez=="c3":
                 szxzs=""
                
                 
-                blockw=10000
-                blockw1=9999
+                blockw=1000
+                blockw1=999
             
                 #print(sssssw)
+                #print(lenf1)
                     
                 wer=""
+                
+                    
+                if sssssw<=131000:
+                    countraz=1
+                if sssssw>=lenf1:
+                    countraz=1
+                #print(countraz)
                 if countraz==1:
+                
               
                     
                     
