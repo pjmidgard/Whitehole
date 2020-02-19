@@ -2851,8 +2851,8 @@ if namez=="c3":
     namem=""
     namema="?"
    
-    blockw=1000
-    blockw1=999
+    blockw=100
+    blockw1=99
     nameas=name+".b3"
     countraz=0
     werw=0
@@ -2869,7 +2869,7 @@ if namez=="c3":
         s=str(data)
         lenf1=len(data)
 
-        if lenf1<1000:
+        if lenf1<100:
             ##print("This file is too small");
             raise SystemExit
         if lenf1>(2**32)-1:
@@ -2917,8 +2917,8 @@ if namez=="c3":
             asaaq=""
             szxzzzas=""
             s=""
-            blockw=1000
-            blockw1=999
+            blockw=100
+            blockw1=99
             sdaa=""
             aas=0
             asaaq=""
@@ -2989,7 +2989,7 @@ if namez=="c3":
                         n=0
                         sssq=0
                         enx=0
-                        if blockw==1000:
+                        if blockw==100:
 
 
                            
@@ -3023,7 +3023,7 @@ if namez=="c3":
                                 if e3=="0":
                                     e7=2
                                     aaqws=aaqws+"0"
-                                if e6==1000:
+                                if e6==100:
                                     raise SystemExit    
 
                             if e7==1:
@@ -3040,7 +3040,7 @@ if namez=="c3":
                                         szxx=szxx[e1-1:]
                                         szxx="1"+szxx
                                         e4=1
-                                    if e6==1000:
+                                    if e6==100:
                                         raise SystemExit    
                             if e7==2:
      
@@ -3058,7 +3058,7 @@ if namez=="c3":
                                         szxx=szxx[e2-1:]
                                         szxx="0"+szxx
                                         e4=1
-                                    if e6==1000:
+                                    if e6==100:
                                         raise SystemExit    
                                     
                                 
@@ -3360,8 +3360,8 @@ if namez=="c3":
                 szxzs=""
                
                 
-                blockw=1000
-                blockw1=999
+                blockw=100
+                blockw1=99
             
                 #print(sssssw)
                 #print(lenf1)
