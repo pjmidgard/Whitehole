@@ -2472,7 +2472,13 @@ if namez=="u3":
             assas=0
             wer=""
             asaaqt=""
-            countraz=countraz+1
+            r1=0
+            r2=0
+            r3=0
+            r4=0
+            r5=0
+            r6=0
+            
 
 
             
@@ -2491,6 +2497,26 @@ if namez=="u3":
                     while z<xc:
                         sda="0"+sda
                         z=z+1
+
+                
+
+                r3=len(sda)
+                r4=r3-8
+                
+                onebytetakesize=sda[r4:r3]
+                onebytetakesize1=int(onebytetakesize,2)
+                
+                r5=r4-onebytetakesize1
+                
+                onebytetakesize2=sda[r5:r4]
+                onebytetakesize3=int(onebytetakesize2,2)
+
+                
+                r6=r5-onebytetakesize3
+                
+                onebytetakesize4=sda[r6:r5]
+                onebytetakesize5=int(onebytetakesize4,2)
+                
                 
                 for byte in sda:
                     sda=str(sda)
