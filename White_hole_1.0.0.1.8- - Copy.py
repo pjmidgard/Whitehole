@@ -3019,11 +3019,59 @@ if namez=="c3":
 
 
                             if szxx=="000000000000000000000000000000000000000000000000":
+                                qqw1q="10"
                                 
-                                asaaq=asaaq+"0"
-                            elif szxx=="111111111111111111111111111111111111111111111111":    
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
+                                    while z<xc:
+                                        szxzzzas="0"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
+                                    while z<xc:
+                                        szxzzzasaa="0"+szxzzzasaa
+                                        z=z+1
                                 
-                                asaaq=asaaq+"1"
+                                
+                                asaaq=asaaq+"0"+szxzzzas+szxzzzasaa
+                            elif szxx=="111111111111111111111111111111111111111111111111":
+                                qqw1q="10"
+                                
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
+                                    while z<xc:
+                                        szxzzzas="0"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
+                                    while z<xc:
+                                        szxzzzasaa="0"+szxzzzasaa
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+"1"+szxzzzas+szxzzzasaa
                             else:
                                 e7=0
                                 e6=0
