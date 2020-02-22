@@ -3411,7 +3411,7 @@ if namez=="c3":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                 
-                wer=wer+szx+szxzzz+szxz+szxzc+szxzl+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz 
+                wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz 
                 szx=""
 		
 				#szxzzz 0111 one
