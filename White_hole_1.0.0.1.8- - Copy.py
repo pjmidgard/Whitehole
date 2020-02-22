@@ -3449,7 +3449,7 @@ if namez=="c3":
                 wer=""
                 
                     
-                if sssssw<=2000:
+                if sssssw<=100:
                     countraz=1
                 if sssssw<lenf1:
                     datal=jl
