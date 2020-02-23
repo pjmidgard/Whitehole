@@ -2958,6 +2958,11 @@ if namez=="c3":
             asaaqt=""
             e1=0
             e2=0
+            dd3w=0
+            dd4w=0
+            dd5w=0
+            dd6w=0
+            
             
 
 
@@ -3016,7 +3021,14 @@ if namez=="c3":
                         sssq=0
                         enx=0
                         if blockw==6:
-
+                            e7=0
+                            e6=0
+                            e5=0    
+                            e4=0
+                            e3=0
+                            e2=0
+                            e1=0
+                            de=len(szxx)
                             #print(szxx)
                             if szxx=="000000000000000000000000000000000000000000000000":
                                 qqw1q="10"
@@ -3045,6 +3057,7 @@ if namez=="c3":
                                 
                                 
                                 asaaq=asaaq+"0"+szxzzzas+szxzzzasaa
+                                os.system("pause")
                             elif szxx=="111111111111111111111111111111111111111111111111":
                                 qqw1q="10"
                                 
@@ -3072,6 +3085,7 @@ if namez=="c3":
                                 
                                 
                                 asaaq=asaaq+"1"+szxzzzas+szxzzzasaa
+                                os.system("pause")
                             else:
                                 e7=0
                                 e6=0
@@ -3099,7 +3113,7 @@ if namez=="c3":
                                     if e3=="1":
                                         e7=3
                                         szxx=szxx[2:]
-                                        szxx.replace('0', '0')
+                                        szxx="0"+szxx
                                         aaqws=aaqws+"1"
                                         #print("e73")
                                     if e3=="0":
@@ -3119,8 +3133,9 @@ if namez=="c3":
                                             zzaax=zzaax+"1"
                                             #print(zzaax)
                                         if e3=="0":
-                                            szxx.replace('0', '1')
+                                            
                                             szxx=szxx[e1:]
+                                            
                                             
                                             e4=1
                                         if e6==48:
@@ -3134,11 +3149,13 @@ if namez=="c3":
                                         e6=e6+1
                                         e3=szxx[e1:e2]
                                         if e3=="0":
-                                            aaqws=aaqws+"0"
+                                            aaqws=aaqws+"1"
                                         if e3=="1":
                                             aaqws=aaqws+"1"
-                                            szxx.replace('0', '0')
-                                            szxx=szxx[e2:]
+                                            
+                                            
+                                            
+                                            
                                             
                                             #print("2l")
                                             #os.system("pause")
@@ -3148,23 +3165,35 @@ if namez=="c3":
                                         if e6==48:
                                             raise SystemExit    
                                     
+                                    e4=0
+                                    while e4<1:
+                                        e1=e2
+                                        e2=e2+1
+                                        e6=e6+1
+                                        e3=szxx[e1:e2]
+                                        if e3=="1":
+                                            aaqws=aaqws+"0"
+                                        if e3=="0":
+                                            
+                                            szxx=szxx[e1:]
+                                            
+                                            
+                                            
+                                            
+                                            #print("2l")
+                                            #print(szxx)
+                                            #os.system("pause")
+                                            
                                 
-                             
-                                #wwwr=len(szxx)
-                                #print(szxx)
-                                #print(wwwr)
-                                #dd1w=len(aaqws)
-                                #print(aaqws)
-                                #print(dd1w)
+                                            e4=1
+
+                                        
+                                        if e6==48:
+                                            raise SystemExit    
+                                    
                                 
-                                #dd2w=len(zzaax)
-                                #print(zzaax)
-                                #print(dd2w)
                                 wer=wer+szxx
-                                #print(e7)
-                                #os.system("pause")
-                              
-                                
+                               
                        
                             
                         
@@ -3381,17 +3410,19 @@ if namez=="c3":
                         z=z+1
                
                         
+               
+                # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
+                werw=werw+1
+                #First time when compress write 0 after every time write 1.                           
+                if werw==1:
+                    wer="10"+wer+aaqws+zzaax+asaaq+"1"
+                else:
+                    wer="11"+wer+aaqws+zzaax+asaaq+"1"
+                aqqwwa=10
                 zzaax=""
                 asaaql=""
                 asaaqq=""
                 asaaq=""
-                # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
-                werw=werw+1
-                if werw==1:
-                    wer="10"+wer+aaqws+zzaax+"1"
-                else:
-                    wer="11"+wer+aaqws+zzaax+"1"
-                aqqwwa=10    
                 lenf=len(wer)
                 xc=8-lenf%8
                 z=0
@@ -3426,28 +3457,33 @@ if namez=="c3":
                 wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz 
                 szx=""
 		
-				#szxzzz 01- 1, 1 and 2+ of zeros 000....1-1, 00....1 one
-				#szxz  01- 1,1 and 2+ of zeros 000....1-1, 00....1 two
-			    #szxzas  01-1, 1 and 2+ of zeros 000....1-1, 00....1 three
+				#szxzzz 01- 1and 2+ of zeros 000....111111- 00…111…000... one
+				#szxz  01- 1 and 2+ of zeros 000....111111- 00…111..000... two
+			    #szxzas  01-1 0 and 2+ of zeros 000....1- 01111... three
 				#szxzc lastbitblocksize one
 				#szxzl lastbitblocksize two
 				#szxzlz lastbitblocksize tree
-				#szxzzza+szxzs+szxzff 1111...-0, 011... 6
-			    #szxzzzq+szxzzzqq+szxzzzqqz 1111... or 0000... 6 
+				#szxzzza+szxzs+szxzff 1111...- 011... 6
+			    #szxzzzq+szxzzzqq+szxzzzqqz 1111... or 0000... 6
 
-                            #
+
+                            
+
+
+                            
                             
                            
                 
                 n = int(wer, 2)
                 
                 qqwslenf=len(wer)
+                #print(qqwslenf)   
                 qqwslenf=(qqwslenf/8)*2
                 qqwslenf=str(qqwslenf)
                 qqwslenf="%0"+qqwslenf+"x"
                     
                    
-                                
+                   
                 jl=binascii.unhexlify(qqwslenf % n)
                 sssssw=len(jl)
                 data=jl
@@ -3459,8 +3495,8 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-               #print(sssssw)
-               #print(lenf1)
+                #sprint(sssssw)
+                #print(lenf1)
                     
                 wer=""
                 
