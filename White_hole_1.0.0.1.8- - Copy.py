@@ -3188,9 +3188,10 @@ if namez=="c3":
                                             e4=1
 
                                         
-                                        if e6==48:
-                                            e4=1
+                                        if e6==48 and e3=="1":
                                             szxx=szxx[e1:]
+                                            e4=1
+                                            
                                     
                                 #wwwr=len(szxx)
                                 #print(szxx)
@@ -3201,7 +3202,7 @@ if namez=="c3":
                                 #len(zzaax)
                                 #dd2w=len(zzaax)
                                 #print(dd2w) 
-                                #wer=wer+szxx
+                                wer=wer+szxx
                                 #os.system("pause")
                                
                        
@@ -3505,7 +3506,7 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-                #sprint(sssssw)
+                #print(sssssw)
                 #print(lenf1)
                     
                 wer=""
