@@ -3189,10 +3189,20 @@ if namez=="c3":
 
                                         
                                         if e6==48:
-                                            raise SystemExit    
+                                            e4=1
+                                            szxx=szxx[e1:]
                                     
-                                
-                                wer=wer+szxx
+                                #wwwr=len(szxx)
+                                #print(szxx)
+                                #print(wwwr)
+                                #dd1w=len(aaqws)
+                                #print(szxx)
+                                #print(dd1w)
+                                #len(zzaax)
+                                #dd2w=len(zzaax)
+                                #print(dd2w) 
+                                #wer=wer+szxx
+                                #os.system("pause")
                                
                        
                             
