@@ -3151,7 +3151,7 @@ if namez=="c3":
                                         if e3=="0":
                                             aaqws=aaqws+"1"
                                         if e3=="1":
-                                            aaqws=aaqws+"1"
+                                            aaqws=aaqws+"0"
                                             
                                             
                                             
@@ -3180,7 +3180,7 @@ if namez=="c3":
                                             
                                             
                                             
-                                            #print("2l")
+                                            ##print("2l")
                                             #print(szxx)
                                             #os.system("pause")
                                             
@@ -3457,9 +3457,9 @@ if namez=="c3":
                 wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz 
                 szx=""
 		
-				#szxzzz 01- 1and 2+ of zeros 000....111111- 00…111…000... one
-				#szxz  01- 1 and 2+ of zeros 000....111111- 00…111..000... two
-			    #szxzas  01-1 0 and 2+ of zeros 000....1- 01111... three
+				#szxzzz 01- 1and 2+ of zeros 000....111111- 00…011…000... one
+				#szxz  01- 1 and 2+ of zeros 000....111111- 00…011..000... two
+			    #szxzas  01-1 0 and 2+ of zeros  000....111111- 00…011..000...  three
 				#szxzc lastbitblocksize one
 				#szxzl lastbitblocksize two
 				#szxzlz lastbitblocksize tree
