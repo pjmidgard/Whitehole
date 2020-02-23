@@ -3029,7 +3029,7 @@ if namez=="c3":
                             e2=0
                             e1=0
                             de=len(szxx)
-                            #print(szxx)
+                            print(szxx)
                             if szxx=="000000000000000000000000000000000000000000000000":
                                 qqw1q="10"
                                 
@@ -3114,7 +3114,7 @@ if namez=="c3":
                                         e7=3
                                         szxx=szxx[2:]
                                         szxx="0"+szxx
-                                        aaqws=aaqws+"1"
+                                        aaqws=aaqws+"0"
                                         #print("e73")
                                     if e3=="0":
                                         e7=2
@@ -3172,7 +3172,7 @@ if namez=="c3":
                                         e6=e6+1
                                         e3=szxx[e1:e2]
                                         if e3=="1":
-                                            aaqws=aaqws+"0"
+                                            aaqws=aaqws+"1"
                                         if e3=="0":
                                             
                                             szxx=szxx[e1:]
@@ -3193,17 +3193,21 @@ if namez=="c3":
                                             e4=1
                                             
                                     
-                                #wwwr=len(szxx)
-                                #print(szxx)
-                                #print(wwwr)
-                                #dd1w=len(aaqws)
-                                #print(szxx)
-                                #print(dd1w)
-                                #len(zzaax)
-                                #dd2w=len(zzaax)
-                                #print(dd2w) 
+                                wwwr=len(szxx)
+                                print(szxx)
+                                print(wwwr)
+                            
+                                dd1w=len(aaqws)
+
+                                print(aaqws)
+                               
+                                print(dd1w)
+                                
+                                dd2w=len(zzaax)
+                                print(zzaax)
+                                print(dd2w) 
                                 wer=wer+szxx
-                                #os.system("pause")
+                                os.system("pause")
                                
                        
                             
