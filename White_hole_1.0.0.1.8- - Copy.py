@@ -3029,7 +3029,7 @@ if namez=="c3":
                             e2=0
                             e1=0
                             de=len(szxx)
-                            print(szxx)
+                            #print(szxx)
                             if szxx=="000000000000000000000000000000000000000000000000":
                                 qqw1q="10"
                                 
@@ -3085,7 +3085,7 @@ if namez=="c3":
                                 
                                 
                                 asaaq=asaaq+"1"+szxzzzas+szxzzzasaa
-                                os.system("pause")
+                                #os.system("pause")
                             else:
                                 e7=0
                                 e6=0
@@ -3193,21 +3193,21 @@ if namez=="c3":
                                             e4=1
                                             
                                     
-                                wwwr=len(szxx)
-                                print(szxx)
-                                print(wwwr)
+                                #wwwr=len(szxx)
+                                #print(szxx)
+                                #print(wwwr)
                             
-                                dd1w=len(aaqws)
+                                #dd1w=len(aaqws)
 
-                                print(aaqws)
+                                #print(aaqws)
                                
-                                print(dd1w)
+                                #print(dd1w)
                                 
-                                dd2w=len(zzaax)
-                                print(zzaax)
-                                print(dd2w) 
+                                #dd2w=len(zzaax)
+                                #print(zzaax)
+                                #print(dd2w) 
                                 wer=wer+szxx
-                                os.system("pause")
+                                #os.system("pause")
                                
                        
                             
