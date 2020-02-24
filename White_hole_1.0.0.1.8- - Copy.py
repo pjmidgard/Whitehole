@@ -58,7 +58,7 @@ wer=""
 qtqweqw=""
 numberschangenotexist = []
 numbers = []
-namez = input("Please, enter c or c1 or c2 for compress and for u or u1 or u2 for extract? ")
+namez = input("Please, enter c or c1 or c2 or c3 for compress and for u or u1 or u2 for extract? ")
 if namez=="u1":
     name = input("What is name of file? ")
     namea="file.WhiteHall"
