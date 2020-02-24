@@ -2956,6 +2956,7 @@ if namez=="c3":
             assas=0
             wer=""
             asaaqt=""
+            aaqws1=""
             e1=0
             e2=0
             dd3w=0
@@ -3087,6 +3088,8 @@ if namez=="c3":
                                 asaaq=asaaq+"1"+szxzzzas+szxzzzasaa
                                 #os.system("pause")
                             else:
+                                e9=0
+                                e8=0
                                 e7=0
                                 e6=0
                                 e5=0    
@@ -3118,7 +3121,7 @@ if namez=="c3":
                                         #print("e73")
                                     if e3=="0":
                                         e7=2
-                                        aaqws=aaqws+"0"
+                                        
                                     if e6==48:
                                         raise SystemExit    
 
@@ -3149,9 +3152,20 @@ if namez=="c3":
                                         e6=e6+1
                                         e3=szxx[e1:e2]
                                         if e3=="0":
+                                            e8=e8+1
+                                            if e8==1:
+                                                aaqws=aaqws+"0"
+                                                aaqws1=aaqws1+"1"
                                             aaqws=aaqws+"1"
                                         if e3=="1":
-                                            aaqws=aaqws+"0"
+                                            e8=e8+1
+                                            if e8==1:
+                                                aaqws1=aaqws1+"0"
+                                                aaqws=aaqws+"1"
+                                            else:
+                                                aaqws=aaqws+"0"
+                                            szxx=szxx[e1:]
+                                            
                                             
                                             
                                             
@@ -3165,32 +3179,7 @@ if namez=="c3":
                                         if e6==48:
                                             raise SystemExit    
                                     
-                                    e4=0
-                                    while e4<1:
-                                        e1=e2
-                                        e2=e2+1
-                                        e6=e6+1
-                                        e3=szxx[e1:e2]
-                                        if e3=="1":
-                                            aaqws=aaqws+"1"
-                                        if e3=="0":
-                                            
-                                            szxx=szxx[e1:]
-                                            
-                                            
-                                            
-                                            
-                                            ##print("2l")
-                                            #print(szxx)
-                                            #os.system("pause")
-                                            
-                                
-                                            e4=1
-
-                                        
-                                        if e6==48 and e3=="1":
-                                            szxx=szxx[e1:]
-                                            e4=1
+                                    
                                             
                                     
                                 #wwwr=len(szxx)
@@ -3424,15 +3413,54 @@ if namez=="c3":
                         szxzas="0"+szxzas
                         z=z+1
                
+                dd=len(szxz)
+                
+                dd=len(aaqws1)
+
+                szxzq1=""
+                szxzq1=bin(dd)[2:]
+                dd=len(szxzq1)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzq1="0"+szxzq1
+                        z=z+1
+                dd=len(szxzq1)        
                         
+                dd=len(szxzq1)
+
+                szxzq2=""
+                szxzq2=bin(dd)[2:]
+                dd=len(szxzq2)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzq2="0"+szxzq2
+                        z=z+1
+                dd=len(szxzq2)
+
+                dd=len(szxzq2)
+
+                szxzq3=""
+                szxzq3=bin(dd)[2:]
+                dd=len(szxzq3)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzq3="0"+szxzq3
+                        z=z+1
+                dd=len(szxzq3) 
                
                 # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
                 werw=werw+1
                 #First time when compress write 0 after every time write 1.                           
                 if werw==1:
-                    wer="10"+wer+aaqws+zzaax+asaaq+"1"
+                    wer="10"+wer+aaqws+zzaax+asaaq+aaqws1+"1"
                 else:
-                    wer="11"+wer+aaqws+zzaax+asaaq+"1"
+                    wer="11"+wer+aaqws+zzaax+asaaq+aaqws1+"1"
                 aqqwwa=10
                 zzaax=""
                 asaaql=""
@@ -3469,7 +3497,7 @@ if namez=="c3":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                 
-                wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz 
+                wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz+szxzq1+szxzq2+szxzq3
                 szx=""
 		
 				#szxzzz 01- 1and 2+ of zeros 000....111111- 00…011…000... one
@@ -3510,8 +3538,8 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-                #print(sssssw)
-                #print(lenf1)
+                print(sssssw)
+                print(lenf1)
                     
                 wer=""
                 
