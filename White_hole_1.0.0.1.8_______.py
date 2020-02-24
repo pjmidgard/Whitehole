@@ -857,7 +857,7 @@ if namez=="c3":
                                         e7=2
                                         
                                     if e6==48:
-                                        raise SystemExit    
+                                        jl=datal     
 
                                 if e7==1:
                                     e4=0
@@ -877,7 +877,7 @@ if namez=="c3":
                                             
                                             e4=1
                                         if e6==48:
-                                            raise SystemExit    
+                                            jl=datal  
                                 if e7==2:
                                     szxx1=""
                                     e4=0
@@ -925,7 +925,7 @@ if namez=="c3":
                                 
                                             e4=1
                                         if e6==48:
-                                            raise SystemExit    
+                                            jl=datal     
                                     
                                     
                                             
