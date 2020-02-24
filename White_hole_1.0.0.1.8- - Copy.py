@@ -3116,7 +3116,7 @@ if namez=="c3":
                                     if e3=="1":
                                         e7=3
                                         szxx=szxx[2:]
-                                        szxx="0"+szxx
+                                        szxx="1"+szxx
                                         aaqws=aaqws+"0"
                                         #print("e73")
                                     if e3=="0":
@@ -3136,15 +3136,16 @@ if namez=="c3":
                                             zzaax=zzaax+"1"
                                             #print(zzaax)
                                         if e3=="0":
-                                            
+                                            szxx=szxx[1:]
                                             szxx=szxx[e1:]
+                                            szxx="0"+szxx
                                             
                                             
                                             e4=1
                                         if e6==48:
                                             raise SystemExit    
                                 if e7==2:
-         
+                                    szxx1=""
                                     e4=0
                                     while e4<1:
                                         e1=e2
@@ -3154,17 +3155,29 @@ if namez=="c3":
                                         if e3=="0":
                                             e8=e8+1
                                             if e8==1:
-                                                aaqws=aaqws+"0"
                                                 aaqws1=aaqws1+"1"
-                                            aaqws=aaqws+"1"
+                                                aaqws=aaqws+"1"
+                                            else:
+                                                szxx1="0"+szxx1
                                         if e3=="1":
                                             e8=e8+1
                                             if e8==1:
                                                 aaqws1=aaqws1+"0"
                                                 aaqws=aaqws+"1"
-                                            else:
-                                                aaqws=aaqws+"0"
+                                                #print(szxx)
+                                               
+                                            
+                                                
+                                            szxx=szxx[1:]
+                                            
                                             szxx=szxx[e1:]
+                                            szxx3=len(szxx1)
+                                            szxx4=szxx1[szxx3-1:]
+                                            if szxx3>0:
+                                                szxx="1"+szxx1+"1"+szxx
+                                            else:
+                                                szxx="1"+szxx
+                                            
                                             
                                             
                                             
@@ -3172,6 +3185,7 @@ if namez=="c3":
                                             
                                             
                                             #print("2l")
+                                            
                                             #os.system("pause")
                                             
                                 
@@ -3181,7 +3195,8 @@ if namez=="c3":
                                     
                                     
                                             
-                                    
+                                #wwwrw1=len(aaqws1)
+                                #print(aaqws1)
                                 #wwwr=len(szxx)
                                 #print(szxx)
                                 #print(wwwr)
@@ -3500,13 +3515,13 @@ if namez=="c3":
                 wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz+szxzq1+szxzq2+szxzq3
                 szx=""
 		
-				#szxzzz 01- 1and 2+ of zeros 000....111111- 00…011…000... one
-				#szxz  01- 1 and 2+ of zeros 000....111111- 00…011..000... two
-			    #szxzas  01-1 0 and 2+ of zeros  000....111111- 00…011..000...  three
+				#szxzq1+szxzq2+szxzq3 szxzzz 01-1, 0 and 2+ of zeros 000....111111- 1 or 1000...1 1,1 or 1,0 one
+				# szxzq1+szxzq2+szxzq3 szxz  01-1, 0 and 2+ of zeros 000....111111- 1 or 1000...1,1,1 or 1,0 two
+			    #szxzq1+szxzq2+szxzq3 szxzas  01-1, 0 and 2+ of zeros  000....111111- 1 or 1000...1,1,1 or 1,0  three
 				#szxzc lastbitblocksize one
 				#szxzl lastbitblocksize two
 				#szxzlz lastbitblocksize tree
-				#szxzzza+szxzs+szxzff 1111...- 011... 6
+				#szxzzza+szxzs+szxzff 1111...-0, 011... 6
 			    #szxzzzq+szxzzzqq+szxzzzqqz 1111... or 0000... 6
 
 
@@ -3538,8 +3553,8 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-                print(sssssw)
-                print(lenf1)
+                #print(sssssw)
+                #print(lenf1)
                     
                 wer=""
                 
