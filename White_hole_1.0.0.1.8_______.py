@@ -857,7 +857,9 @@ if namez=="c3":
                                         e7=2
                                         
                                     if e6==48:
-                                        jl=datal     
+                                        jl=datal
+                                        f2.write(jl)
+                                        raise SystemExit
 
                                 if e7==1:
                                     e4=0
@@ -877,7 +879,9 @@ if namez=="c3":
                                             
                                             e4=1
                                         if e6==48:
-                                            jl=datal  
+                                            jl=datal
+                                            f2.write(jl)
+                                            raise SystemExit
                                 if e7==2:
                                     szxx1=""
                                     e4=0
@@ -925,7 +929,9 @@ if namez=="c3":
                                 
                                             e4=1
                                         if e6==48:
-                                            jl=datal     
+                                            jl=datal
+                                            f2.write(jl)
+                                            raise SystemExit
                                     
                                     
                                             
@@ -945,6 +951,7 @@ if namez=="c3":
                                 #print(zzaax)
                                 #print(dd2w) 
                                 wer=wer+szxx
+                                szxx=""
                                 #os.system("pause")
                                
                        
