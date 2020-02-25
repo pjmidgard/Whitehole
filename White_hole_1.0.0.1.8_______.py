@@ -792,7 +792,7 @@ if namez=="c3":
                                 
                                 
                                 asaaq=asaaq+"0"+szxzzzas+szxzzzasaa
-                                os.system("pause")
+                                #os.system("pause")
                             elif szxx=="111111111111111111111111111111111111111111111111":
                                 qqw1q="10"
                                 
@@ -1294,8 +1294,8 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-                #print(sssssw)
-                #print(lenf1)
+                print(sssssw)
+                print(lenf1)
                     
                 wer=""
                 
