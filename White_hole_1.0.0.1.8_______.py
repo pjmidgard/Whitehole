@@ -58,7 +58,927 @@ wer=""
 qtqweqw=""
 numberschangenotexist = []
 numbers = []
-namez = input("Please, enter c3 for compress and for u3 for extract? ")
+namez = input("Please, enter c, c1 for compress and for u, u1 for extract? ")
+
+if namez=="u":
+    name = input("What is name of file? ")
+    namea="file.WhiteHall"
+    namem=""
+    namema="?"
+   
+    blockw=5
+    blockw1=4
+    nameas=name
+    nac=len(nameas)
+    if nameas[nac-3:nac]==".b1":
+        nameas=nameas[0:nac-3]
+    countraz=0
+    
+    s=""
+   
+
+    with open(nameas, "w") as f4:
+            f4.write(s)
+    with open(nameas, "a") as f3:
+            f3.write(s)
+    with open(name, "rb") as binary_file:
+        # Read the whole file at once
+        data = binary_file.read()
+        s=str(data)
+        lenf1=len(data)
+
+        if lenf1<6:
+            ##print("This file is too small");
+            raise SystemExit
+        if lenf1>(2**32)-1:
+            ##print("This file is too big");
+            raise SystemExit
+
+        while assx<10:
+            
+            a=0
+            ass=0
+            asss=0
+            b=0
+            aaqw=""
+            aaqws=""
+            l=""
+            j=0
+            b=0
+            aq=0
+            qfl=0
+            t=0
+            h=0
+            byteb=""
+            notexist=""
+            lenf=0
+            numberschangenotexistq = []
+            numberschangenotexistqz = []
+            qwa=0
+            m = []
+            p=0
+            
+            d=1
+            a=0
+            asd=""
+            b=0
+            szx=""
+            asf2="0b"
+            while b<1790:
+                m+=[-1]
+                b=b+1
+            k = []
+            wer=""
+            numberschangenotexist = []
+            numbers = []
+            assa=0
+            asaaq=""
+            szxzzzas=""
+            s=""
+            blockw=4
+            blockw1=3
+            sdaa=""
+            aas=0
+            asaaq=""
+            asaaqq=""
+            asaaql=""
+            asaaqll=""
+            en=0
+            assa=0
+            assas=0
+            wer=""
+            asaaqt=""
+            countraz=countraz+1
+
+
+            
+              
+                
+
+           
+            with open(nameas, "ab") as f2:
+                sda=bin(int(binascii.hexlify(data),16))[2:]
+                lenf=len(sda)
+                
+                lenf1=len(data) 
+                xc=(lenf1*8)-lenf
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        sda="0"+sda
+                        z=z+1
+                
+                for byte in sda:
+                    sda=str(sda)
+                    if byte=="1":
+                        sdaa=sdaa+"0"
+
+                    if byte=="0":
+                        sdaa=sdaa+"1"
+                  
+                    aas=aas+1
+                   
+                    if aas==8:
+                        a=a+1
+                        aas=0
+            
+                    if a == blockw:
+                        
+                        szxx=""
+                        szxx=sdaa
+             
+                        wqwe=""
+                        p=0
+                        aaqq=""
+                        d=1
+                        a=0
+                        da=0
+                        aaqw=""
+                        aaqql=""
+                        assa=assa+1
+                        assas=assas+1
+                        if assa==(2**32)-1:
+                           assaz="0"
+                           
+                           #asaaq=asaaq+assaz
+                        qqw1q="0"
+                        
+                        n=0
+                        sssq=0
+                        enx=0
+                        if blockw==4:
+
+
+                           
+                                
+                             
+                            
+
+                             
+                             
+                             
+                            wer=wer+szxx
+                            
+                            
+                                
+                       
+                            
+                        
+                        
+                        
+                        sdaa=""
+                        a=0
+                        numberschangenotexist = []    
+                        del k[:]
+                            
+                        del numbers[:]
+                        m = []
+                        b=0
+                        while b<blockw:
+                            m+=[-1]
+                            b=b+1
+                        b=0
+                        b=0
+                               
+                                
+                    s=a%blockw
+                    
+                if s!=0:
+                    
+                    
+                    p=-1
+                    if s!=blockw1:
+                        
+                        szx=sdaa
+                        aqqd1=len(zzaax1)
+                        if aqqd1==0:
+                            szx=szx+""
+                        else:
+                            szx=szx
+                        szx=szx+""
+                        szx=""+szx
+                        asss1=len(szx)
+                        asss2=asss1-1
+                        qqw=szx[asss2]
+                        if qqw=="1":
+                            szx=szx
+                        if qqw=="0":
+                            szx=szx
+                        wer=wer+szx
+                        lenfzzz=len(szx)
+                        szx=""
+                        fffgjv1=""
+                        fffgjv=""
+                            
+                        lenf=len(szx)
+                        szx=""
+                        zzaax1=""        
+                         
+                        
+                a=0
+                szx=""
+                
+                
+                
+                
+                dd=len(aaqws)
+                dda=len(zzaax)
+
+
+                ddwa=len(asaaq)
+                
+                szxzzzq=""
+                szxzzzq=bin(ddwa)[2:]
+                ddwa=len(szxzzzq)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzq="0"+szxzzzq
+                        z=z+1
+                
+                ddwa=len(szxzzzq)
+
+
+                szxzzzqq=""
+                szxzzzqq=bin(ddwa)[2:]
+                ddwa=len(szxzzzqq)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzqq="0"+szxzzzqq
+                        z=z+1
+                
+                dd=len(szxzzzqq)
+
+                szxzzzqqz=""
+                szxzzzqqz=bin(dd)[2:]
+                ddwa=len(szxzzzqqz)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzqqz="0"+szxzzzqqz
+                        z=z+1
+
+                dd=len(szxzzzqqz)
+
+               
+                
+                dd=len(aaqws)
+                
+                szxzzz=""
+                szxzzz=bin(dd)[2:]
+                dd=len(szxzzz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzz="0"+szxzzz
+                        z=z+1
+                
+                dd=len(szxzzz)
+
+                szxzzza=""
+                szxzzza=bin(dda)[2:]
+                dda=len(szxzzza)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzza="0"+szxzzza
+                        z=z+1
+                
+                dda=len(szxzzza)
+
+                szxzs=""
+                szxzs=bin(dda)[2:]
+                dda=len(szxzs)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzs="0"+szxzs
+                        z=z+1
+                        
+                dda=len(szxzs)
+                szxzff=""
+                szxzff=bin(dda)[2:]
+                dda=len(szxzff)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzff="0"+szxzff
+                        z=z+1
+
+                
+
+
+                
+                
+
+                
+
+                
+                szxzz=""
+                szxzc=""
+                szxzc=bin(lenfzzz)[2:]
+                dd=len(szxzc)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzc="0"+szxzc
+                        z=z+1
+                        
+                dd=len(szxzc)
+                szxzz=""
+
+                aqqww=10
+                szxzl=""
+                szxzl=bin(dd)[2:]
+                dd=len(szxzl)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzl="0"+szxzl
+                        aqqww=aqqww+1
+                        z=z+1
+                
+                aqqd1=len(zzaax)
+                
+               
+                
+                dd=len(szxzzz)
+
+                szxz=""
+                szxz=bin(dd)[2:]
+                dd=len(szxz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxz="0"+szxz
+                        z=z+1
+                        
+                dd=len(szxz)
+
+                szxzas=""
+                szxzas=bin(dd)[2:]
+                dda=len(szxzas)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzas="0"+szxzas
+                        z=z+1
+               
+                        
+                zzaax=""
+                asaaql=""
+                asaaqq=""
+                asaaq=""
+                # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
+                
+                aqqwwa=10    
+                lenf=len(wer)
+                xc=8-lenf%8
+                z=0
+                if xc!=0 and xc!=8:
+                    while z<xc:
+                        szx="0"+szx
+                        z=z+1
+                        aqqwwa=aqqwwa+1
+                szxzlz=""
+
+                
+                ddd=len(szxzl)
+                szxzlz=bin(ddd)[2:]
+                dds=len(szxzlz)
+                xc=8-dds%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzlz="0"+szxzlz
+                        z=z+1
+
+
+                szxzlz1=bin(aqqwwa)[2:]
+                dds=len(szxzlz1)
+                xc=8-dds%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzlz1="0"+szxzlz1
+                        z=z+1
+                
+                wer=wer+szx
+                szx=""
+		
+				#szxzzz 0111 one
+				#szxz 0111 two
+			    #szxzas 0111 three
+				#szxzc lastbitblocksize one
+				#szxzl lastbitblocksize two
+				#szxzlz lastbitblocksize tree
+				#szxzzza+szxzs+szxzff 1000
+			    #szxzzzq+szxzzzqq+szxzzzqqz 11110000 6
+                wer="000000000110001100000000"+wer
+                n = int(wer, 2)
+                
+                qqwslenf=len(wer)
+                qqwslenf=(qqwslenf/8)*2
+                qqwslenf=str(qqwslenf)
+                qqwslenf="%0"+qqwslenf+"x"
+                    
+                   
+                                
+                jl=binascii.unhexlify(qqwslenf % n)
+                sssssw=len(jl)
+                data=jl
+                qqqwz=qqqwz+1
+                szxzzza=""
+                szxzs=""
+               
+                
+                blockw=4
+                blockw1=3
+            
+                #print(sssssw)
+                    
+                wer=""
+                if countraz==1:
+              
+                    
+                    import paq
+                    jl  = paq.decompress(jl) 
+                    
+                    assx=10
+                    if assx==10:
+                        f2.write(jl) 
+                    
+                   
+            
+if namez=="c":
+    name = input("What is name of file? ")
+    namea="file.WhiteHall"
+    namem=""
+    namema="?"
+   
+    blockw=5
+    blockw1=4
+    nameas=name+".b1"
+    countraz=0
+    
+    s=""
+   
+
+    with open(nameas, "w") as f4:
+            f4.write(s)
+    with open(nameas, "a") as f3:
+            f3.write(s)
+    with open(name, "rb") as binary_file:
+        # Read the whole file at once
+        data = binary_file.read()
+        s=str(data)
+        lenf1=len(data)
+
+        if lenf1<6:
+            ##print("This file is too small");
+            raise SystemExit
+        if lenf1>(2**32)-1:
+            ##print("This file is too big");
+            raise SystemExit
+
+        while assx<10:
+            
+            a=0
+            ass=0
+            asss=0
+            b=0
+            aaqw=""
+            aaqws=""
+            l=""
+            j=0
+            b=0
+            aq=0
+            qfl=0
+            t=0
+            h=0
+            byteb=""
+            notexist=""
+            lenf=0
+            numberschangenotexistq = []
+            numberschangenotexistqz = []
+            qwa=0
+            m = []
+            p=0
+            
+            d=1
+            a=0
+            asd=""
+            b=0
+            szx=""
+            asf2="0b"
+            while b<1790:
+                m+=[-1]
+                b=b+1
+            k = []
+            wer=""
+            numberschangenotexist = []
+            numbers = []
+            assa=0
+            asaaq=""
+            szxzzzas=""
+            s=""
+            blockw=4
+            blockw1=3
+            sdaa=""
+            aas=0
+            asaaq=""
+            asaaqq=""
+            asaaql=""
+            asaaqll=""
+            en=0
+            assa=0
+            assas=0
+            wer=""
+            asaaqt=""
+            countraz=countraz+1
+
+
+            import paq
+            if countraz==1:
+                data = paq.compress(data)
+                paqc=len(data)
+                
+
+           
+            with open(nameas, "ab") as f2:
+                sda=bin(int(binascii.hexlify(data),16))[2:]
+                lenf=len(sda)
+                
+                lenf1=len(data) 
+                xc=(lenf1*8)-lenf
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        sda="0"+sda
+                        z=z+1
+                      
+                for byte in sda:
+                    sda=str(sda)
+                    if byte=="1":
+                        sdaa=sdaa+"0"
+
+                    if byte=="0":
+                        sdaa=sdaa+"1"
+                  
+                    aas=aas+1
+                   
+                    if aas==8:
+                        a=a+1
+                        aas=0
+            
+                    if a == blockw:
+                        
+                        szxx=""
+                        szxx=sdaa
+             
+                        wqwe=""
+                        p=0
+                        aaqq=""
+                        d=1
+                        a=0
+                        da=0
+                        aaqw=""
+                        aaqql=""
+                        assa=assa+1
+                        assas=assas+1
+                        if assa==(2**32)-1:
+                           assaz="0"
+                           
+                           #asaaq=asaaq+assaz
+                        qqw1q="0"
+                        
+                        n=0
+                        sssq=0
+                        enx=0
+                        if blockw==4:
+
+
+                           
+                                
+                             
+                            
+
+                             
+                             
+                             
+                            wer=wer+szxx
+                            
+                            
+                                
+                       
+                            
+                        
+                        
+                        
+                        sdaa=""
+                        a=0
+                        numberschangenotexist = []    
+                        del k[:]
+                            
+                        del numbers[:]
+                        m = []
+                        b=0
+                        while b<blockw:
+                            m+=[-1]
+                            b=b+1
+                        b=0
+                        b=0
+                               
+                                
+                    s=a%blockw
+                    
+                if s!=0:
+                    
+                    
+                    p=-1
+                    if s!=blockw1:
+                        
+                        szx=sdaa
+                        aqqd1=len(zzaax1)
+                        if aqqd1==0:
+                            szx=szx+""
+                        else:
+                            szx=szx
+                        szx=szx+""
+                        szx=""+szx
+                        asss1=len(szx)
+                        asss2=asss1-1
+                        qqw=szx[asss2]
+                        if qqw=="1":
+                            szx=szx
+                        if qqw=="0":
+                            szx=szx
+                        wer=wer+szx
+                        lenfzzz=len(szx)
+                        szx=""
+                        fffgjv1=""
+                        fffgjv=""
+                            
+                        lenf=len(szx)
+                        szx=""
+                        zzaax1=""        
+                         
+                        
+                a=0
+                szx=""
+                
+                
+                
+                
+                dd=len(aaqws)
+                dda=len(zzaax)
+
+
+                ddwa=len(asaaq)
+                
+                szxzzzq=""
+                szxzzzq=bin(ddwa)[2:]
+                ddwa=len(szxzzzq)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzq="0"+szxzzzq
+                        z=z+1
+                
+                ddwa=len(szxzzzq)
+
+
+                szxzzzqq=""
+                szxzzzqq=bin(ddwa)[2:]
+                ddwa=len(szxzzzqq)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzqq="0"+szxzzzqq
+                        z=z+1
+                
+                dd=len(szxzzzqq)
+
+                szxzzzqqz=""
+                szxzzzqqz=bin(dd)[2:]
+                ddwa=len(szxzzzqqz)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzqqz="0"+szxzzzqqz
+                        z=z+1
+
+                dd=len(szxzzzqqz)
+
+               
+                
+                dd=len(aaqws)
+                
+                szxzzz=""
+                szxzzz=bin(dd)[2:]
+                dd=len(szxzzz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzz="0"+szxzzz
+                        z=z+1
+                
+                dd=len(szxzzz)
+
+                szxzzza=""
+                szxzzza=bin(dda)[2:]
+                dda=len(szxzzza)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzza="0"+szxzzza
+                        z=z+1
+                
+                dda=len(szxzzza)
+
+                szxzs=""
+                szxzs=bin(dda)[2:]
+                dda=len(szxzs)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzs="0"+szxzs
+                        z=z+1
+                        
+                dda=len(szxzs)
+                szxzff=""
+                szxzff=bin(dda)[2:]
+                dda=len(szxzff)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzff="0"+szxzff
+                        z=z+1
+
+                
+
+
+                
+                
+
+                
+
+                
+                szxzz=""
+                szxzc=""
+                szxzc=bin(lenfzzz)[2:]
+                dd=len(szxzc)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzc="0"+szxzc
+                        z=z+1
+                        
+                dd=len(szxzc)
+                szxzz=""
+
+                aqqww=10
+                szxzl=""
+                szxzl=bin(dd)[2:]
+                dd=len(szxzl)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzl="0"+szxzl
+                        aqqww=aqqww+1
+                        z=z+1
+                
+                aqqd1=len(zzaax)
+                
+               
+                
+                dd=len(szxzzz)
+
+                szxz=""
+                szxz=bin(dd)[2:]
+                dd=len(szxz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxz="0"+szxz
+                        z=z+1
+                        
+                dd=len(szxz)
+
+                szxzas=""
+                szxzas=bin(dd)[2:]
+                dda=len(szxzas)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzas="0"+szxzas
+                        z=z+1
+               
+                        
+                zzaax=""
+                asaaql=""
+                asaaqq=""
+                asaaq=""
+                # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
+                
+                aqqwwa=10    
+                lenf=len(wer)
+                xc=8-lenf%8
+                z=0
+                if xc!=0 and xc!=8:
+                    while z<xc:
+                        szx="0"+szx
+                        z=z+1
+                        aqqwwa=aqqwwa+1
+                szxzlz=""
+
+                
+                ddd=len(szxzl)
+                szxzlz=bin(ddd)[2:]
+                dds=len(szxzlz)
+                xc=8-dds%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzlz="0"+szxzlz
+                        z=z+1
+
+
+                szxzlz1=bin(aqqwwa)[2:]
+                dds=len(szxzlz1)
+                xc=8-dds%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzlz1="0"+szxzlz1
+                        z=z+1
+                
+                wer=wer+szx
+                szx=""
+		
+				#szxzzz 0111 one
+				#szxz 0111 two
+			    #szxzas 0111 three
+				#szxzc lastbitblocksize one
+				#szxzl lastbitblocksize two
+				#szxzlz lastbitblocksize tree
+				#szxzzza+szxzs+szxzff 1000
+			    #szxzzzq+szxzzzqq+szxzzzqqz 11110000 6
+                
+                n = int(wer, 2)
+                
+                qqwslenf=len(wer)
+                qqwslenf=(qqwslenf/8)*2
+                qqwslenf=str(qqwslenf)
+                qqwslenf="%0"+qqwslenf+"x"
+                    
+                   
+                                
+                jl=binascii.unhexlify(qqwslenf % n)
+                sssssw=len(jl)
+                data=jl
+                qqqwz=qqqwz+1
+                szxzzza=""
+                szxzs=""
+               
+                
+                blockw=4
+                blockw1=3
+            
+                #print(sssssw)
+                    
+                wer=""
+                if countraz==1:
+              
+                    
+                    
+                    jl=jl[3:]
+                    assx=10
+                    if assx==10:
+                        f2.write(jl)           
                     
 zzaax=""
 szxzzzas=""
@@ -118,7 +1038,7 @@ wer=""
 qtqweqw=""
 numberschangenotexist = []
 numbers = []
-if namez=="u3":
+if namez=="u1":
     name = input("What is name of file? ")
     namea="file.WhiteHall"
     namem=""
@@ -658,7 +1578,7 @@ if namez=="u3":
                     
                    
             
-if namez=="c3":
+if namez=="c1":
     name = input("What is name of file? ")
     namea="file.WhiteHall"
     namem=""
@@ -1296,8 +2216,8 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-                print(sssssw)
-                print(lenf1)
+                #print(sssssw)
+                #print(lenf1)
                     
                 wer=""
                 
