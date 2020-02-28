@@ -305,23 +305,6 @@ if namez=="u3":
                 #########################################
 
                 
-                r17=r16-8
-                
-                onebytetakesize24=sda[r17:r16]
-                onebytetakesize25=int(onebytetakesize24,2)
-
-                r18=r17-onebytetakesize25
-                
-                onebytetakesize26=sda[r18:r17]
-                onebytetakesize27=int(onebytetakesize26,2)
-
-                r19=r18-onebytetakesize27
-                
-                onebytetakesize28=sda[r19:r18]
-                onebytetakesize29=int(onebytetakesize28,2)
-
-                #########################################
-                
                 for byte in sda:
                     sda=str(sda)
                     if byte=="1":
@@ -836,212 +819,103 @@ if namez=="c3":
                             de=len(szxx)
                             szxx6=szxx
                             #print(szxx)
-                            if szxx=="000000000000000000000000000000000000000000000000":
-                                qqw1q="10"
+                            
                                 
+                            
+                            e9=0
+                            e8=0
+                            e7=0
+                            e6=0
+                            e5=0    
+                            e4=0
+                            e3=0
+                            e2=0
+                            e1=0
+                                
+                            e1=e2
+                            e2=e2+1
+                            e6=e6+1
+                            e3=szxx[e1:e2]
 
-                                szxzzzas=""
-                                szxzzzas=bin(assa)[2:]
-                                dd=len(szxzzzas)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzas="0"+szxzzzas
-                                        z=z+1
-                                        
-                                dd=len(szxzzzas)
-                                szxzzzasaa=""
-                                szxzzzasaa=bin(dd)[2:]
-                                dd=len(szxzzzasaa)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzasaa="0"+szxzzzasaa
-                                        z=z+1
-                                
-                                
-                                asaaq=asaaq+"10"+szxzzzas+szxzzzasaa
-                                #os.system("pause")
-                            elif szxx=="111111111111111111111111111111111111111111111111":
-                                qqw1q="10"
-                                
+                            if e3=="1":
+                                e7=1
+                                zzaax=zzaax+"0"
+                                #print(zzaax)
 
-                                szxzzzas=""
-                                szxzzzas=bin(assa)[2:]
-                                dd=len(szxzzzas)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzas="0"+szxzzzas
-                                        z=z+1
-                                        
-                                dd=len(szxzzzas)
-                                szxzzzasaa=""
-                                szxzzzasaa=bin(dd)[2:]
-                                dd=len(szxzzzasaa)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzasaa="0"+szxzzzasaa
-                                        z=z+1
-                                
-                                
-                                asaaq=asaaq+"01"+szxzzzas+szxzzzasaa
-                                #os.system("pause")
-                            elif szxx=="111111111111111111111111111111111111111111111110":
-                                qqw1q="10"
-                                
-
-                                szxzzzas=""
-                                szxzzzas=bin(assa)[2:]
-                                dd=len(szxzzzas)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzas="0"+szxzzzas
-                                        z=z+1
-                                        
-                                dd=len(szxzzzas)
-                                szxzzzasaa=""
-                                szxzzzasaa=bin(dd)[2:]
-                                dd=len(szxzzzasaa)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzasaa="0"+szxzzzasaa
-                                        z=z+1
-                                
-                                
-                                asaaq=asaaq+"00"+szxzzzas+szxzzzasaa
-                            elif szxx=="000000000000000000000000000000000000000000000001":
-                                qqw1q="10"
-                                
-
-                                szxzzzas=""
-                                szxzzzas=bin(assa)[2:]
-                                dd=len(szxzzzas)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzas="0"+szxzzzas
-                                        z=z+1
-                                        
-                                dd=len(szxzzzas)
-                                szxzzzasaa=""
-                                szxzzzasaa=bin(dd)[2:]
-                                dd=len(szxzzzasaa)
-                                xc=8-dd%8
-                                z=0
-                                if xc!=0 and xc!=8 and xc!=16 and xc!=24 and xc!=32:
-                                    while z<xc:
-                                        szxzzzasaa="0"+szxzzzasaa
-                                        z=z+1
-                                
-                                
-                                asaaq=asaaq+"11"+szxzzzas+szxzzzasaa
-                                
-                            else:
-                                e9=0
-                                e8=0
-                                e7=0
-                                e6=0
-                                e5=0    
-                                e4=0
-                                e3=0
-                                e2=0
-                                e1=0
-                                
+                            if e3=="0":
                                 e1=e2
                                 e2=e2+1
                                 e6=e6+1
                                 e3=szxx[e1:e2]
-
                                 if e3=="1":
-                                    e7=1
-                                    zzaax=zzaax+"0"
-                                    #print(zzaax)
-
+                                    e7=3
+                                    szxx=szxx[2:]
+                                    szxx="1"+szxx
+                                    aaqws=aaqws+"0"
+                                    #print("e73")
                                 if e3=="0":
+                                    e7=2
+                                        
+                                if e6==48:
+                                    jl=datal
+                                    f2.write(jl)
+                                    raise SystemExit
+
+                            if e7==1:
+                                e4=0
+                                while e4<1:
                                     e1=e2
                                     e2=e2+1
                                     e6=e6+1
                                     e3=szxx[e1:e2]
                                     if e3=="1":
-                                        e7=3
-                                        szxx=szxx[2:]
-                                        szxx="1"+szxx
-                                        aaqws=aaqws+"0"
-                                        #print("e73")
+                                        zzaax=zzaax+"1"
+                                        #print(zzaax)
                                     if e3=="0":
-                                        e7=2
-                                        
+                                        szxx=szxx[1:]
+                                        szxx=szxx[e1:]
+                                        szxx="0"+szxx
+                                            
+                                            
+                                        e4=1
                                     if e6==48:
+                                        #print(szxx6)
                                         jl=datal
                                         f2.write(jl)
                                         raise SystemExit
-
-                                if e7==1:
-                                    e4=0
-                                    while e4<1:
-                                        e1=e2
-                                        e2=e2+1
-                                        e6=e6+1
-                                        e3=szxx[e1:e2]
-                                        if e3=="1":
-                                            zzaax=zzaax+"1"
-                                            #print(zzaax)
-                                        if e3=="0":
-                                            szxx=szxx[1:]
-                                            szxx=szxx[e1:]
-                                            szxx="0"+szxx
-                                            
-                                            
-                                            e4=1
-                                        if e6==48:
-                                            #print(szxx6)
-                                            jl=datal
-                                            f2.write(jl)
-                                            raise SystemExit
-                                if e7==2:
-                                    szxx1=""
-                                    e4=0
-                                    while e4<1:
-                                        e1=e2
-                                        e2=e2+1
-                                        e6=e6+1
-                                        e3=szxx[e1:e2]
-                                        if e3=="0":
-                                            e8=e8+1
-                                            if e8==1:
-                                                aaqws1=aaqws1+"1"
-                                                aaqws=aaqws+"1"
-                                            else:
-                                                szxx1="0"+szxx1
-                                        if e3=="1":
-                                            e8=e8+1
-                                            if e8==1:
-                                                aaqws1=aaqws1+"0"
-                                                aaqws=aaqws+"1"
-                                                #print(szxx)
+                            if e7==2:
+                                szxx1=""
+                                e4=0
+                                while e4<1:
+                                    e1=e2
+                                    e2=e2+1
+                                    e6=e6+1
+                                    e3=szxx[e1:e2]
+                                    if e3=="0":
+                                        e8=e8+1
+                                        if e8==1:
+                                            aaqws1=aaqws1+"1"
+                                            aaqws=aaqws+"1"
+                                        else:
+                                            szxx1="0"+szxx1
+                                    if e3=="1":
+                                        e8=e8+1
+                                        if e8==1:
+                                            aaqws1=aaqws1+"0"
+                                            aaqws=aaqws+"1"
+                                            #print(szxx)
                                                
                                             
                                                 
-                                            szxx=szxx[1:]
+                                        szxx=szxx[1:]
                                             
-                                            szxx=szxx[e1:]
-                                            szxx3=len(szxx1)
-                                            szxx4=szxx1[szxx3-1:]
-                                            if szxx3>0:
-                                                szxx="1"+szxx1+"1"+szxx
-                                            else:
-                                                szxx="1"+szxx
+                                        szxx=szxx[e1:]
+                                        szxx3=len(szxx1)
+                                        szxx4=szxx1[szxx3-1:]
+                                        if szxx3>0:
+                                            szxx="1"+szxx1+"1"+szxx
+                                        else:
+                                            szxx="1"+szxx
                                             
                                             
                                             
@@ -1054,12 +928,12 @@ if namez=="c3":
                                             #os.system("pause")
                                             
                                 
-                                            e4=1
-                                        if e6==48:
-                                            #print(szxx6)
-                                            jl=datal
-                                            f2.write(jl)
-                                            raise SystemExit
+                                        e4=1
+                                    if e6==48:
+                                        #print(szxx6)
+                                        jl=datal
+                                        f2.write(jl)
+                                        raise SystemExit
                                     
                                     
                                             
@@ -1078,8 +952,8 @@ if namez=="c3":
                                 #dd2w=len(zzaax)
                                 #print(zzaax)
                                 #print(dd2w) 
-                                wer=wer+szxx
-                                szxx=""
+                            wer=wer+szxx
+                            szxx=""
                                 #os.system("pause")
                                
                        
@@ -1381,7 +1255,7 @@ if namez=="c3":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                 
-                wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz+szxzq1+szxzq2+szxzq3
+                wer=wer+szx+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzq1+szxzq2+szxzq3
                 szx=""
 		
                 # szxzzz szxzq1+szxzq2+szxzq3 01-1, 0 and 2+ of zeros 000....111111- 1 or 1000...1 1, 1 or 1, 0 one
@@ -1391,7 +1265,7 @@ if namez=="c3":
                 #szxzl lastbitblocksize two
                 #szxzlz lastbitblocksize tree
                 #szxzzza+szxzs+szxzff 1111...-0, 011... 6
-                #szxzzzq+szxzzzqq+szxzzzqqz 1111... or 0000... 6
+                
 
 
                             
@@ -1422,8 +1296,8 @@ if namez=="c3":
                 blockw=6
                 blockw1=5
             
-                #print(sssssw)
-                #print(lenf1)
+                print(sssssw)
+                print(lenf1)
                     
                 wer=""
                 
