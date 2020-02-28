@@ -250,7 +250,77 @@ if namez=="u3":
                 
                 onebytetakesize4=sda[r6:r5]
                 onebytetakesize5=int(onebytetakesize4,2)
+
+                #########################################
                 
+                r8=r6-8
+                
+                onebytetakesize6=sda[r8:r6]
+                onebytetakesize7=int(onebytetakesize6,2)
+
+                r9=r8-onebytetakesize7
+                
+                onebytetakesize8=sda[r9:r8]
+                onebytetakesize9=int(onebytetakesize8,2)
+
+                r10=r9-onebytetakesize9
+                
+                onebytetakesize10=sda[r10:r9]
+                onebytetakesize11=int(onebytetakesize10,2)
+
+                #########################################
+
+                r11=r10-8
+                
+                onebytetakesize12=sda[r11:r10]
+                onebytetakesize13=int(onebytetakesize12,2)
+
+                r12=r11-onebytetakesize13
+                
+                onebytetakesize14=sda[r12:r11]
+                onebytetakesize15=int(onebytetakesize14,2)
+
+                r13=r12-onebytetakesize15
+                
+                onebytetakesize16=sda[r13:r12]
+                onebytetakesize17=int(onebytetakesize16,2)
+
+                #########################################
+
+                r14=r13-8
+                
+                onebytetakesize18=sda[r14:r13]
+                onebytetakesize19=int(onebytetakesize18,2)
+
+                r15=r14-onebytetakesize19
+                
+                onebytetakesize20=sda[r16:r15]
+                onebytetakesize21=int(onebytetakesize20,2)
+
+                r16=r15-onebytetakesize21
+                
+                onebytetakesize22=sda[r16:r15]
+                onebytetakesize23=int(onebytetakesize22,2)
+
+                #########################################
+
+                
+                r17=r16-8
+                
+                onebytetakesize24=sda[r17:r16]
+                onebytetakesize25=int(onebytetakesize24,2)
+
+                r18=r17-onebytetakesize25
+                
+                onebytetakesize26=sda[r18:r17]
+                onebytetakesize27=int(onebytetakesize26,2)
+
+                r19=r18-onebytetakesize27
+                
+                onebytetakesize28=sda[r19:r18]
+                onebytetakesize29=int(onebytetakesize28,2)
+
+                #########################################
                 
                 for byte in sda:
                     sda=str(sda)
