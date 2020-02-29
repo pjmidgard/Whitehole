@@ -2136,9 +2136,9 @@ if namez=="c1":
                 werw=werw+1
                 #First time when compress write 0 after every time write 1.                           
                 if werw==1:
-                    wer="10"+wer+aaqws+zzaax+asaaq+aaqws1+"1"
+                    wer="10"+wer+aaqws+zzaax+aaqws1+"1"
                 else:
-                    wer="11"+wer+aaqws+zzaax+asaaq+aaqws1+"1"
+                    wer="11"+wer+aaqws+zzaax+aaqws1+"1"
                 aqqwwa=10
                 zzaax=""
                 asaaql=""
