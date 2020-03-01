@@ -1,3 +1,4 @@
+#Maked by Jurijus Pacalovas
 import os
 import binascii
 zzaax=""
@@ -1271,6 +1272,27 @@ if namez=="u1":
 
                     elif sda[sdalong-9:sdalong]=="100000000":
                         sda=sda[:sdalong-9]
+
+                    if sda[0:1]=="0":
+                        sda=sda[1:]
+
+                        countraz==1
+                    if sda[0:1]=="1":
+                        sda=sda[1:]
+
+                        countraz==2
+
+                    r17=r15-onebytetakesize22
+                    onebytetakesize221=sda[r17:r15]
+                    
+                    r18=r17-onebytetakesize17
+                    onebytetakesize171=sda[r18:r17]
+                    
+                    r19=r18-onebytetakesize5
+                    onebytetakesize51=sda[r19:r18]
+
+                    r20=r19-onebytetakesize11
+                    onebytetakesize111=sda[r20:r19]
                 
                 for byte in sda:
                     sda=str(sda)
@@ -1279,6 +1301,9 @@ if namez=="u1":
 
                     if byte=="0":
                         sdaa=sdaa+"1"
+
+                       
+                    
                   
                     aas=aas+1
                    
