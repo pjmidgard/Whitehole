@@ -1223,7 +1223,54 @@ if namez=="u1":
                 onebytetakesize23=int(onebytetakesize22,2)
 
                 #########################################
+                for byte in sda:
+                    if sda[0:1]=="1":
+                        sda=sda[1:]
+                    elif sda[0:2]=="01":
+                        sda=sda[2:]
+                    elif sda[0:3]=="001":
+                        sda=sda[3:]
+                    elif sda[0:4]=="0001":
+                        sda=sda[4:]
+                    elif sda[0:5]=="00001":
+                        sda=sda[5:]
 
+                    elif sda[0:6]=="000001":
+                        sda=sda[6:]
+                    elif sda[0:7]=="0000001":
+                        sda=sda[7:]
+
+                    elif sda[0:8]=="00000001":
+                        sda=sda[8:]
+
+                    elif sda[0:9]=="000000001":
+                        sda=sda[9:]    
+
+                        
+                    sdalong=r16
+
+                    
+                    if sda[sdalong-1:sdalong]=="1":
+                        sda=sda[:sdalong-1]
+                    elif sda[sdalong-2:sdalong]=="10":
+                        sda=sda[:sdalong-2]
+                    elif sda[sdalong-3:sdalong]=="100":
+                        sda=sda[:sdalong-3]
+                    elif sda[sdalong-4:sdalong]=="1000":
+                        sda=sda[:sdalong-4]
+                    elif sda[sdalong-5:sdalong]=="10000":
+                        sda=sda[:sdalong-5]
+                    elif sda[sdalong-6:sdalong]=="100000":
+                        sda=sda[:sdalong-6]
+
+                    elif sda[sdalong-7:sdalong]=="1000000":
+                        sda=sda[:sdalong-7]
+
+                    elif sda[sdalong-8:sdalong]=="10000000":
+                        sda=sda[:sdalong-8]
+
+                    elif sda[sdalong-9:sdalong]=="100000000":
+                        sda=sda[:sdalong-9]
                 
                 for byte in sda:
                     sda=str(sda)
